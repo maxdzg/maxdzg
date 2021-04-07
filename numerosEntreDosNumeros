@@ -1,0 +1,32 @@
+/*Hacer un programa que muestre todos los numeros entre dos numeros introducidos por el usuario*/
+'use strict'
+
+var num1;
+var num2;
+var numMayor;
+var numMenor;
+var i = 0;
+
+num1 = parseInt(prompt("Escribe el primer numero: "));
+num2 = parseInt(prompt("Escribe el segundo numero: "));
+
+if (num1 > num2)
+{
+  numMayor = num1;
+  numMenor = num2;
+}
+
+else
+{
+  numMayor = num2;
+  numMenor = num1;
+}
+
+//console.log("Numero Mayor: " + numMayor);
+//console.log("Numero Menor: " + numMenor);
+document.write("<h1>Entre "+numMayor+" y "+numMenor+" están estos números:</h1>")
+for (i = numMayor - 1; i > numMenor; i--)
+{
+  document.write(i+"<br>");
+
+}
